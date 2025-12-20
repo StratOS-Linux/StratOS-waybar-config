@@ -1,5 +1,5 @@
 # Maintainer: @zstg <zestig@duck.com>
-pkgname=stratos-waybar-hyprland-config
+pkgname=stratos-waybar-config
 pkgver=1.0
 pkgrel=3
 pkgdesc="Waybar configuration for StratOS"

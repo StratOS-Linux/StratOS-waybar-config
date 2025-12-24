@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sed -i 's/niri\/workspaces/hyprland\/workspaces/g' ~/.config/waybar/config.jsonc

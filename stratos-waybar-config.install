@@ -1,4 +1,5 @@
 post_install() {
-    echo "==> Waybar configuration files have been copied to /etc/skel/.config/waybar/."
-    echo "==> You may copy these files to ~/.config/ and make any changes you wish."
+  echo "==> Waybar configuration has been installed to /etc/skel/.config/waybar/."
+  echo "==> To use it, copy it to your home directory:"
+  echo "    cp -r /etc/skel/.config/waybar ~/.config/"
 }

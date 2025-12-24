@@ -72,7 +72,7 @@
 	// "format": "",
 	"format": "",
 	"tooltip": false,
-	"on-click": "$HOME/.config/eww/scripts/power"
+	"on-click": "/usr/local/bin/power"
     },
     "battery": {
 	"interval": 1,
@@ -91,10 +91,10 @@
         "device":"intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-click":"swayosd-client --brightness (~/.config/hypr/scripts/bri --get)", 
+        "on-click":"swayosd-client --brightness (/usr/local/bin/bri --get)", 
         "on-click-right": "swayosd-client --brightness 30",
-        "on-scroll-up": "~/.config/hypr/scripts/bri --up",
-        "on-scroll-down": "~/.config/hypr/scripts/bri --down",
+        "on-scroll-up": "/usr/local/bin/bri --up",
+        "on-scroll-down": "/usr/local/bin/bri --down",
         "tooltip": false,
     },
     "custom/sep": {

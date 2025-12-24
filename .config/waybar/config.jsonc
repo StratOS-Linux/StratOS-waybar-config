@@ -109,7 +109,7 @@
 	    //"updated": "",
 	    "updated": "",
 	},
-	"exec": "$HOME/.config/hypr/scripts/waybar-updates -l 100",
+	"exec": "/usr/local/bin/waybar-updates -l 100",
     },
     "wlr/taskbar": {
 	"format": "{icon}",

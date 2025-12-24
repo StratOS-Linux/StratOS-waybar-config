@@ -1,7 +1,7 @@
 # Maintainer: @zstg <zestig@duck.com>
 pkgname=stratos-waybar-config
 pkgver=1.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Waybar configuration for StratOS"
 # provides=('stratos-waybar-hyprland-config' 'stratos-waybar-niri-config')
 arch=('any')

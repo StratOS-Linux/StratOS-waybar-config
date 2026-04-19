@@ -131,7 +131,7 @@
 	},
 	"bluetooth": {
 		"format": "{status} 󰂯",
-		"on-click": "bash ~/.config/niri/scripts/rofi-bluetooth &",
+		"on-click": "bash ~/.config/hypr/scripts/rofi-bluetooth &",
 		"format-connected": "{device_alias} 󰂯",
 		"format-connected-battery": "{device_battery_percentage}% {device_alias} 󰂯" ,
 		// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
@@ -142,8 +142,8 @@
 	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
-		"on-click": "bash ~/.config/niri/scripts/rofi-wifi &",
-		"on-click-right": "kitty nmtui",
+		"on-click": "bash ~/.config/hypr/scripts/rofi-wifi &",
+		"on-click-right": "ghostty -e nmtui",
 		"format-wifi": "{signalStrength}%  ",
 		"format-ethernet": "Wired Connection ",
 		"tooltip-format": "{essid} @ {ifname} via {gwaddr} ",
@@ -153,7 +153,7 @@
 	},
 	"pulseaudio": {
 		// "scroll-step": 1, // %, can be a float
-		"format": "{volume}% {icon} ",
+		"format": "{volume}% {icon}",
 		// "format-bluetooth": "{volume}% {icon} {desc}", // will be shown in BT module
 		"format-bluetooth-muted": " {icon} {desc}",
 		"format-muted": "muted 󰝟",
@@ -187,23 +187,23 @@
 		]
 	},
 	"custom/logo": {
-		"format": "󰣇 ",
+		"format": " 󰣇 ",
 		"tooltip": false,
 		"interval": 1,
-		"on-click": "emacsclient -nc -a 'emacs' ~/.config/waybar/style.css ~/.config/waybar/config",
+		"on-click": "emacsclient -nc -a 'emacs' ~/.config/hypr/niri.conf ~/.config/hypr/waybar/style.css ~/.config/hypr/waybar/config",
 	},
 	"custom/powermenu": {
 		"format": " ",
 		"tooltip" : false,
 		"on-click-right": "archlinux-logout",
-		"on-click": "~/.config/niri/scripts/rofi-powermenu && ~/.config/niri/scripts/waybar-toggle",
+		"on-click": "~/.config/hypr/scripts/rofi-powermenu && ~/.config/hypr/scripts/waybar-toggle",
 	},
 	"custom/updates": {
 		"format": "{}",
 		"interval": 60,
-		"exec": "$HOME/.config/niri/scripts/check-updates",
+		"exec": "$HOME/.config/hypr/scripts/check-updates", // was checkupdates | wc -l
 		"exec-if": "exit 0",
-		"on-click": "~/.config/niri/scripts/rofi-updates",
+		"on-click": "~/.config/hypr/scripts/rofi-updates",
 		"signal": 8,
 		"tooltip": false,
 	},
@@ -238,7 +238,7 @@
 		"smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
 		"on-scroll-up": "playerctl next",
 		"on-scroll-down": "playerctl previous",
-		"exec": "$HOME/.config/niri/scripts/mediaplayer.py 2> /dev/null",
+		"exec": "$HOME/.config/hypr/scripts/mediaplayer.py 2> /dev/null",
 	},
 
 	"group/group-backlight": {
@@ -283,32 +283,32 @@
 		"format": " 󰤄  ",
 		"tooltip": true,
 		"tooltip-format": "Suspend system",
-		"on-click": "~/.config/niri/scripts/rofi-power-applets --suspend"
+		"on-click": "~/.config/hypr/scripts/rofi-power-applets --suspend"
 	},
 	"custom/quit": {
 		"format": "󰗼   ",
 		"tooltip": true,
 		"tooltip-format": "Quit session",
-		"on-click": "~/.config/niri/scripts/rofi-power-applets --logout"
+		"on-click": "~/.config/hypr/scripts/rofi-power-applets --logout"
 	},
 	"custom/lock": {
-		"format": "󰌾 ",
+		"format": " 󰌾 ",
 		"tooltip": true,
 		"tooltip-format": "Lock screen",
-		"on-click-right": "~/.config/niri/scripts/rofi-powermenu",
+		"on-click-right": "~/.config/hypr/scripts/rofi-powermenu",
 		"on-click": "$(hyprlock)"
 	},
 	"custom/reboot": {
 		"format": "󰜉   ",
 		"tooltip": true,
 		"tooltip-format": "Restart system",
-		"on-click": "~/.config/niri/scripts/rofi-power-applets --reboot"
+		"on-click": "~/.config/hypr/scripts/rofi-power-applets --reboot"
 	},
 	"custom/power": {
 		"format": "   ",
 		"tooltip": true,
 		"tooltip-format": "Shut down system",
-		"on-click": "~/.config/niri/scripts/rofi-power-applets --shutdown"
+		"on-click": "~/.config/hypr/scripts/rofi-power-applets --shutdown"
 	},
 	"idle_inhibitor": {
 		"format": "{icon}",

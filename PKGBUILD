@@ -1,7 +1,7 @@
 # Maintainer: @magitian <magitian@duck.com>
 pkgname=stratos-waybar-niri-config
-pkgver=1.0
-pkgrel=3
+pkgver=1.1
+pkgrel=0
 pkgdesc="Waybar configuration for StratOS' Niri spin"
 conflicts=('stratos-waybar-hyprland-config')
 arch=('any')
